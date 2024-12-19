@@ -1,0 +1,212 @@
+/*Genel indec .html css kodları*/
+*{
+    cursor: default;
+}
+body{
+    background-color: #ffffff ;
+    color: #212529;
+    font-family:'Times New Roman', Times, serif;
+    
+    
+}
+
+a:hover{
+    color: #0056B3;
+    text-decoration: underline;
+
+}
+nav{
+    background-color: #FFFFFF ;
+    color: #000000;
+
+}
+
+footer{
+    background-color:  #1c1c2b;
+    color: #FFFFFF;
+    
+}
+footer>a:hover{color:  #00ADB5;}
+
+.hero{
+    background-color: #007BFF;
+    color: #FFFFFF;
+
+
+}
+.hero>button{background-color:  #00ADB5; color: #FFFFFF;}
+
+/*NAVBAR*/
+
+.navbar{
+    max-height: 250px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;
+    
+}
+.navbar-brand1>img{
+    padding: 0px;
+    width: 150px;
+    height: 100px;
+    animation: bounce;
+    animation-duration: 2s;
+    
+}
+.navbar-brand{
+    margin-left: 0px;
+    text-align: left;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+
+#bookworld{
+    text-decoration: none;
+}
+.nav-item{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin:5px;
+    margin-right:1rem;
+
+}
+
+.nav-item:hover{
+
+    background-color: #E3F2FD;
+    color:#000000;
+    border: 1px solid #90CAF9;
+}
+.nav-item:visited{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+#search{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+#search:hover{
+    background-color: #E3F2FD;
+    color:#000000;
+    border: 1px solid #90CAF9;
+}
+
+.dropdown-menu {
+    width: auto; 
+    min-width: 50px; 
+    padding: 5px; 
+  }
+  
+  
+  .dropli {
+    padding: 2px 5px; 
+    width: auto; 
+    background-color: white;
+  }
+ 
+  
+  
+  .dropdown-item {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 2px; 
+    font-size: 12px; 
+    width: 30px; 
+
+  }
+  
+ 
+  .dropdown-item img {
+    width: 15px; 
+    height: 15px; 
+
+  
+  }
+  .d-flex{
+    margin-left:4rem;
+  }
+  .form-control{
+    background-color:#FFFFFF;
+    border: 2px solid  #CCCCCC;
+    outline: none;
+    background-color: transparent;
+
+  }
+
+
+/*HEROSECTİON*/
+
+.hero{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.display-4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2rem;
+}
+.lead{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+#herobutton{
+    text-align: center;
+    position: relative;
+    left: 40%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+
+/*Footer*/
+
+
+.footer{
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+.fa-solid,.fas,.fa{
+    margin-right:5px;
+}
+
+@keyframes rubberBand {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
+  

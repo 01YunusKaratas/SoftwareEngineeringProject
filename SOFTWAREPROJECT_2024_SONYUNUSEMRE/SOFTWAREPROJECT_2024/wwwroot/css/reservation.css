@@ -1,0 +1,102 @@
+.navbar{
+    position: static;
+}
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.list-group{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.h4{
+    text-align: left; 
+    margin-left: 3rem;
+    
+
+}
+
+#book-reservation{
+    text-align: left;
+}
+
+#subinformation{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+.modal-content{
+    background-color: #ffffff !important;
+}
+.modal-backdrop{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.modal-content{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+#bookimages {
+    transition: transform 0.5s ease;
+}
+#bookimages:hover{
+
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+#bookimages2{
+    transition: transform 0.8s ease; /* Yumuşak dönüşüm animasyonu */
+    transform-style: preserve-3d; /* 3D dönüşüm etkisini korur */
+   
+}
+#bookimages2:hover{
+
+    transform: rotateY(180deg);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+/*Alertler için yazdım*/
+#alertbook{
+    margin-top: 15rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.card{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.genre{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 3px;
+}
+.genre:hover{
+    color: #0056B3;
+    
+}
+

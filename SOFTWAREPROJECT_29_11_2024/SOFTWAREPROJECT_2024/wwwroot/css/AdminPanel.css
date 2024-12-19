@@ -1,0 +1,85 @@
+body{
+    background-color: #f5f5f5;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.d-flex{
+    background-color: white;
+}
+
+#title1{
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 10px 10px 10px black;
+    margin-left: 10px;
+
+}
+p > #addedbutton{
+    display: flex;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    margin-right: 25px;
+}
+.alert{
+    text-align: center;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+table:hover {
+    box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px); /* Hafif yukarı kaldırma */
+    transition: all 0.4s ease-in-out; /* Geçiş animasyonu */
+}
+
+thead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+.h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style:normal;
+    text-shadow: 5px 5px 5px black;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.btn{
+    width: 150px;
+    text-align: center;
+    color: white;
+    
+    
+}
+.btn:hover{
+    text-decoration: underline;
+    color:black;
+    opacity: 0.9;
+}

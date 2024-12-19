@@ -1,0 +1,203 @@
+﻿@{
+    ViewData["TİTLE"] ="Reservation";
+}
+@{
+    Layout=null;
+}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="stylesheet" href="~/css/reservation.css">
+
+    <title>Reservation - BookWorld</title>
+  </head>
+  <body>
+   <!--Navbar Section Starting-->
+   
+      <!-- Navbar Section Starting-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="~/media/Adsız tasarım.png" alt="LOGO" width="150px" height="100px">
+            </a>
+            <a class="navbar-brand" id="bookworld" asp-controller="Home" asp-action="Index">BookWorld</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Search form -->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="About"><i class="fa-solid fa-circle-info"></i>About</a>
+                </li>
+                @if(Context.Session.GetString("IsActive") == null){
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignIn"><i class="fa-solid fa-book"></i>Reservation</a>
+                  </li>
+
+                }else{
+                    <li class="nav-item">
+                   <!--Buna tıkalyınca offline işlem çalışıcak sessiondan silcek-->
+                      <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="Reservation"><i class="fa-solid fa-book"></i>Reservation</a>
+                    
+                    </li>
+                }
+               
+
+                @if(Context.Session.GetString("IsActive") ==null){
+
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="SignIn"><i class="fas fa-sign-in"></i>Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignUp"><i class="fa fa-user-plus"></i>Sign Up</a>
+                </li>
+                }else{
+                      <li class="nav-item">
+                  <form id="logout-form" method="post" asp-controller="Home" asp-action="LogOut" style="display: none;">
+                      <!-- Görünmez form -->
+                  </form>
+                  <a href="#" class="nav-link active" onclick="document.getElementById('logout-form').submit();">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i> Log-Out
+                  </a>
+              </li>
+
+                }
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/world.png" alt="turkishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/united-kingdom.png" alt="englishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/france.png" alt="frenchFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/germany.png" alt="germanyFlag" width="10px" height="10px"></a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+  <!--Navbar Section Ending-->
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 id="book-reservation">Book Reservation</h2>
+        <div class="row">
+            <!-- Sol Panel: Kategoriler -->
+            <div class="col-md-3">
+                <h4 class="h4">Categories</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action" id="fiction">Fiction</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="non-fiction">Non-Fiction</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="science">Science</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="history">History</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="art">Art</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="philosophy">Philosophy</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="literature">Literature</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="mystery">Mystery</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="biography">Biography</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="psychology">Psychology</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="technology">Technology</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="travel">Travel</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="cookbooks">Cookbooks</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="children">Children</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="poetry">Poetry</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="romance">Romance</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="horror">Horror</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="self-help">Self-Help</a>
+                    <a href="#" class="list-group-item list-group-item-action" id="health">Health</a>
+
+                </div>
+            </div>
+            <!-- Sağ Panel: Kitaplar -->
+            <div class="col-md-8">
+                <h4 class="h4">Books</h4>
+                <div class="row" id="books-list">
+                    <!-- Kitap kartları burada yer alacak -->
+                     <!--Search yaptığımızdada aynı yerde görünsün ekranda başka bir yerde gerek yok fazladan dive -->
+                      <div class="col-sm-3"><div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-body">
+                          <h3>muhsinsd seeked sdsd </h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, eligendi?</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et excepturi aliquid hic fuga ut ipsa tenetur amet laboriosam?</p>
+                        </div>
+                      </div>
+                     </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                        <div class="card-image">
+                          <img src="~/media/france.png" alt=""
+                            height="50px"
+                            width="50px"
+                          >
+                        </div>
+                        <div class="card-body">
+                          <h3>muhsin ay</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, eligendi?</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et excepturi aliquid hic fuga ut ipsa tenetur amet laboriosam?</p>
+                                                    <button type="button" class="btn btn-danger">Kirala</button>
+
+                     </div>
+                      </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                        <div class="card-image"></div>
+                        <div class="card-body">
+                          <h3>muhsin ay</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, eligendi?</p>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et excepturi aliquid hic fuga ut ipsa tenetur amet laboriosam?</p>
+                                                    <button type="button" class="btn btn-submit">Kirala</button>
+
+
+                        </div>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Popper.js ve Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+  </body>
+</html>

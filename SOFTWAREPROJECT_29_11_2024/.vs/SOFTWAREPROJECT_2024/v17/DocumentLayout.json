@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\yunus emre\\source\\repos\\softwareproject_2024\\softwareproject_2024\\models\\viewmodels\\borrowingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\models\\viewmodels\\borrowingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\yunus emre\\source\\repos\\softwareproject_2024\\softwareproject_2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\Models\\ViewModels\\BorrowingViewModel.cs",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\Models\\ViewModels\\BorrowingViewModel.cs",
+              "ToolTip": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\Models\\ViewModels\\BorrowingViewModel.cs",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\Models\\ViewModels\\BorrowingViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T12:12:45.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\Program.cs",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\Program.cs",
+              "ToolTip": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\Program.cs",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T21:50:13.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

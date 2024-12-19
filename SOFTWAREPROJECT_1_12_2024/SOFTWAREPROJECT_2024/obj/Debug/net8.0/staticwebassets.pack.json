@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SOFTWAREPROJECT_2024.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SOFTWAREPROJECT_2024.331h9vx1yd.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\AdminGiriş.css",
+      "PackagePath": "staticwebassets\\css\\AdminGiriş.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\AdminPanel.css",
+      "PackagePath": "staticwebassets\\css\\AdminPanel.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\reservation.css",
+      "PackagePath": "staticwebassets\\css\\reservation.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\singup.css",
+      "PackagePath": "staticwebassets\\css\\singup.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\singın.css",
+      "PackagePath": "staticwebassets\\css\\singın.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\smsverification.css",
+      "PackagePath": "staticwebassets\\css\\smsverification.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\Adsız tasarım.png",
+      "PackagePath": "staticwebassets\\media\\Adsız tasarım.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\france.png",
+      "PackagePath": "staticwebassets\\media\\france.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\germany.png",
+      "PackagePath": "staticwebassets\\media\\germany.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\image-1.jpeg",
+      "PackagePath": "staticwebassets\\media\\image-1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\image-2.jpeg",
+      "PackagePath": "staticwebassets\\media\\image-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\logo1.png",
+      "PackagePath": "staticwebassets\\media\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\pexels-photo-2553425.webp",
+      "PackagePath": "staticwebassets\\media\\pexels-photo-2553425.webp"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\photo4.webp",
+      "PackagePath": "staticwebassets\\media\\photo4.webp"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\tarihçe.png",
+      "PackagePath": "staticwebassets\\media\\tarihçe.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\united-kingdom.png",
+      "PackagePath": "staticwebassets\\media\\united-kingdom.png"
+    },
+    {
+      "Id": "C:\\Users\\YUNUS EMRE\\source\\repos\\SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024\\wwwroot\\media\\world.png",
+      "PackagePath": "staticwebassets\\media\\world.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SOFTWAREPROJECT_2024.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SOFTWAREPROJECT_2024.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SOFTWAREPROJECT_2024.props",
+      "PackagePath": "build\\SOFTWAREPROJECT_2024.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SOFTWAREPROJECT_2024.props",
+      "PackagePath": "buildMultiTargeting\\SOFTWAREPROJECT_2024.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SOFTWAREPROJECT_2024.props",
+      "PackagePath": "buildTransitive\\SOFTWAREPROJECT_2024.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

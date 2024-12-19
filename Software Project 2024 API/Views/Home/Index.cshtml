@@ -1,0 +1,157 @@
+﻿@using Microsoft.AspNetCore.Http
+@model SOFTWAREPROJECT_2024.Models.Member
+@{
+    ViewData["Title"] = "HomePage";  <!-- Sayfa başlığı -->
+}
+@{ Layout = null; }
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="YUNUS EMRE KARATAŞ">
+    <!-- Daima abort hrefleri ASP NETTE değiştiricez -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/index.css"> <!-- Dosya yolu değiştirildi -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>@ViewData["Title"]</title>  <!-- Razor ile dinamik başlık -->
+    
+  </head>
+  <body>
+    <!-- Navbar Section Starting-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                <img src="~/media/Adsız tasarım.png" alt="LOGO" width="150px" height="100px">
+            </a>
+            <a class="navbar-brand" id="bookworld" asp-controller="Home" asp-action="Index">BookWorld</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Search form -->
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="About"><i class="fa-solid fa-circle-info"></i>About</a>
+                </li>
+                @if(Context.Session.GetString("IsActive") == null){
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignIn"><i class="fa-solid fa-book"></i>Reservation</a>
+                  </li>
+
+                }else{
+                    <li class="nav-item">
+                   <!--Buna tıkalyınca offline işlem çalışıcak sessiondan silcek-->
+                      <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="Reservation"><i class="fa-solid fa-book"></i>Reservation</a>
+                    
+                    </li>
+                }
+               
+
+                @if(Context.Session.GetString("IsActive") ==null){
+
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="SignIn"><i class="fas fa-sign-in"></i>Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignUp"><i class="fa fa-user-plus"></i>Sign Up</a>
+                </li>
+                }else{
+                   <li class="nav-item">
+                      <form method="post" asp-controller="Home" asp-action="LogOut">
+                          <button type="submit" class="nav-link active" id="">
+                              <i class="fa fa-sign-out" aria-hidden="true"></i> Log-Out
+                          </button>
+                      </form>
+                  </li>
+
+                }
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/world.png" alt="turkishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/united-kingdom.png" alt="englishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/france.png" alt="frenchFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/germany.png" alt="germanyFlag" width="10px" height="10px"></a></li>
+                    </ul>
+                </li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+      <!-- Hero Section Starting -->
+      <section class="hero">
+          <div class="container">
+            <h1 class="display-4">Welcome to BookWorld!</h1>
+            <p class="lead">A place filled with thousands of books, educational resources, and worlds to explore. It's easy to find the book of your dreams here!</p>
+            @if(Context.Session.GetString("IsActive") ==null){
+              <a asp-controller="Home" asp-action="SignIn" class="btn btn-light btn-lg" id="herobutton">Discover Our Books</a>
+            }else{
+              <a asp-controller="Home" asp-action="Reservation" class="btn btn-light btn-lg" id="herobutton">Discover Our Books</a>
+            }
+          </div>
+      </section>
+
+      <!-- Carousel Section Starting -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="~/media/photo4.webp"  class="d-block w-100" alt="photo-1" width="200px" height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="~/media/image-2.jpeg" class="d-block w-100" alt="photo-2" width="200px" height="500px">
+            </div>
+            <div class="carousel-item">
+              <img src="~/media/image-1.jpeg" class="d-block w-100" alt="photo-3" width="200px" height="500px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <!-- Carousel Section Ending -->
+
+      <!-- Footer Starting -->
+      <footer>
+          <div class="container footer">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer Ending -->
+
+    <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Popper.js ve Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

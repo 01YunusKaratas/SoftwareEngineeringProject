@@ -1,0 +1,462 @@
+@using Microsoft.AspNetCore.Http
+@model SOFTWAREPROJECT_2024.Models.Member
+@{
+    ViewData["Title"] = "HomePage";  <!-- Sayfa başlığı -->
+
+
+}
+@{ Layout = null; }
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="YUNUS EMRE KARATAŞ">
+    <!-- Daima abort hrefleri ASP NETTE değiştiricez -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/index.css"> <!-- Dosya yolu değiştirildi -->
+    <link rel="stylesheet" href="~/css/FAQ.css"><!--Burasıda sayfanın cssi-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--Animation for css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>@ViewData["Title"]</title>  <!-- Razor ile dinamik başlık -->
+    
+  </head>
+  <body>
+    <!-- Navbar Section Starting-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <a class="navbar-brand animate__animated animate__bounce" asp-controller="Home" asp-action="Index">
+                <img src="~/media/Adsız tasarım.png" alt="LOGO" width="150px" height="100px">
+            </a>
+            <a class="navbar-brand" id="bookworld" asp-controller="Home" asp-action="Index">BookWorld</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+            <!-- Search form -->
+           <form class="d-flex" asp-controller="Home" asp-action="Reservation">
+            <input class="form-control me-2" type="search" name="genre" placeholder="Search" aria-label="Search" required>
+            <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="About"><i class="fa-solid fa-circle-info"></i>About</a>
+                </li>
+                @if(Context.Session.GetString("IsActive") == null){
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignIn"><i class="fa-solid fa-book"></i>Reservation</a>
+                  </li>
+
+                }else{
+                    <li class="nav-item">
+                   <!--Buna tıkalyınca offline işlem çalışıcak sessiondan silcek-->
+                      <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="Reservation"><i class="fa-solid fa-book"></i>Reservation</a>
+                    
+                    </li>
+                }
+
+                @if(Context.Session.GetString("IsActive")!=null){
+                  
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="Profile"><i class="fa-solid fa-user"></i>Profile</a>
+                  </li>
+
+                }
+
+
+               
+
+                @if(Context.Session.GetString("IsActive") ==null){
+
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="SignIn"><i class="fas fa-sign-in"></i>Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" asp-controller="Home"  asp-action="SignUp"><i class="fa fa-user-plus"></i>Sign Up</a>
+                </li>
+                }else{
+                 <li class="nav-item">
+                  <form id="logout-form" method="post" asp-controller="Home" asp-action="LogOut" style="display: none;">
+                      <!-- Görünmez form -->
+                  </form>
+                  <a href="#" class="nav-link active" onclick="document.getElementById('logout-form').submit();">
+                      <i class="fa fa-sign-out" aria-hidden="true"></i> Log-Out
+                  </a>
+              </li>
+                }
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/world.png" alt="turkishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/united-kingdom.png" alt="englishFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/france.png" alt="frenchFlag" width="10px" height="10px"></a></li>
+                      <li class="dropli"><a class="dropdown-item" href="#"><img src="~/media/germany.png" alt="germanyFlag" width="10px" height="10px"></a></li>
+                    </ul>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="FAQ"><i class="fas fa-question-circle"></i></a>
+                  </li>
+              </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+        <!--FAQ section started-->
+        <div class="container py-5">
+          
+        <section class="faq">
+          <div class="question maintitle"><h2 id="title1">Sıkça sorulan sorular</h2></div>
+        </section>
+          
+        <section class="faq mt-4">
+            <div class="question">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-11">
+                  <h3 class="title">Sisteme nasıl kayıt olabilirim? </h3>
+                  </div>
+                  <div class="col-sm-1">
+                  <span id="1"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                </div>
+              </div>
+                  <img class="img" src="~/media/profil.png" alt="" width="1250px" height="400px">                
+            </div>
+            <div class="question">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                    <h3 class="title">Şifremi unuttum, ne yapmalıyım?</h3>
+                  </div>
+                  <div class="col-sm-1">
+                    <span id="2"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  </div>
+                </div>
+                <p class="p">Giriş ekranında "Şifremi Unuttum" seçeneğine tıklayın. E-posta adresinizi girerek bir şifre sıfırlama bağlantısı alabilirsiniz. Bu bağlantı üzerinden yeni bir şifre oluşturabilirsiniz.</p>
+            </div>
+            <div class="question">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title">Giriş yapmak için hangi bilgileri kullanmalıyım? </h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="3"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Giriş yaparken kayıt sırasında kullandığınız e-posta adresi ve şifreyi kullanmalısınız. Eğer girişte sorun yaşıyorsanız, "Şifremi Unuttum" seçeneğini deneyebilirsiniz.</p>
+                <a href="~/media/"></a>
+            </div>
+            <div class="question">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title">Kitapları nasıl görüntüleyebilirim? </h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="4"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Ana menüdeki "KitapAra" sekmesine tıklayarak tüm kitaplarımızı görüntüleyebilirsiniz. Arama kutusunu veya filtreleme seçeneklerini kullanarak istediğiniz kitaplara hızlıca ulaşabilirsiniz.</p>
+            </div>
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                       <h3 class="title">Bir kitabın detaylarını nasıl görebilirim?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="5"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Kataloğumuzda bir kitabın üzerine tıklayarak yazar bilgileri, açıklama, stok durumu ve kitap fotoğrafını görebileceğiniz detay sayfasına ulaşabilirsiniz.</p>
+
+            </div>
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                     <h3 class="title">Kitap rezervasyonu nasıl yapılır?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="6"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Giriş yaptıktan sonra istediğiniz kitabın detay sayfasına gidin ve "Rezervasyon Yap" butonuna tıklayın. Talebiniz admin tarafından incelenecek ve onaylandığında size bildirim gelecektir.</p>
+
+            </div>
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title">Rezervasyonum ne zaman hazır olur?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="7"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Admin, talebinizi en kısa sürede değerlendirir. Rezervasyonunuz onaylandığında e-posta veya sistem içi bildirim alacaksınız.</p>
+            </div>
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title">Rezervasyonumu iptal edebilir miyim?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="8"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Evet. Kullanıcı panelinizden "Rezervasyonlarım" bölümüne giderek iptal etmek istediğiniz rezervasyonu seçebilir ve "İptal Et" butonuna tıklayabilirsiniz.</p>
+            </div>
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title"> Bilgilerim sistemde güvende mi?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="9"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <p class="p">Evet, bilgileriniz güvenle saklanmaktadır. Şifreleriniz güçlü bir şifreleme yöntemiyle korunur ve kişisel verileriniz üçüncü taraflarla paylaşılmaz.</p>
+            </div>
+            <div class="question">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-11">
+                  <h3 class="title">Bilgilerimi profil sayfamda nasıl güncelleyebilirim?</h3>
+                </div>
+                <div class="col-sm-1">
+                  <span id="10"><i class="fa-solid fa-plus"></i></span>
+                </div>
+              </div>
+            </div>
+      
+            <p class="p">Profil sayfanıza gidin ve "Bilgilerimi Güncelle" butonuna tıklayın. Ardından, yeni ad, soyad, e-posta adresi gibi bilgilerinizi girerek güncelleyebilirsiniz. Güncellemeyi tamamlamak için "Kaydet" butonuna tıklayın.</p>
+          </div>
+
+            <div class="question">
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm-11">
+                      <h3 class="title">Hangi tarayıcıları destekliyorsunuz?</h3>
+                    </div>
+                    <div class="col-sm-1">
+                      <span id="11"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p class="p">Sistemimiz Chrome, Firefox, Edge ve Safari gibi popüler tarayıcılarla tam uyumludur.</p>
+            </div>
+        </section>
+        </div>
+        <!--FAQ section finished -->
+
+
+
+
+
+
+      <!-- Footer Starting -->
+      <footer>
+          <div class="container footer">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <!-- Footer Ending -->
+
+
+      <!-- script for the open and close paragraph -->
+      <script>
+
+        const showtoP=document.getElementById("1");
+        
+        
+        showtoP.addEventListener("click",function(){
+        
+        const paragraph = showtoP.closest('.question').querySelector('.img');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+       
+        const showtoP2=document.getElementById("2");
+        showtoP2.addEventListener("click",function(){
+        
+        const paragraph = showtoP2.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP3=document.getElementById("3");
+        showtoP3.addEventListener("click",function(){
+        
+        const paragraph = showtoP3.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP4=document.getElementById("4");
+        showtoP4.addEventListener("click",function(){
+        
+        const paragraph = showtoP4.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP5=document.getElementById("5");
+        showtoP5.addEventListener("click",function(){
+        
+        const paragraph = showtoP5.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP6=document.getElementById("6");
+        showtoP6.addEventListener("click",function(){
+        
+        const paragraph = showtoP6.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP7=document.getElementById("7");
+        showtoP7.addEventListener("click",function(){
+        
+        const paragraph = showtoP7.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP8=document.getElementById("8");
+        showtoP8.addEventListener("click",function(){
+        
+        const paragraph = showtoP8.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP9=document.getElementById("9");
+        showtoP9.addEventListener("click",function(){
+        
+        const paragraph = showtoP9.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP10=document.getElementById("10");
+        showtoP10.addEventListener("click",function(){
+        
+        const paragraph = showtoP10.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+           const showtoP11=document.getElementById("11");
+        showtoP11.addEventListener("click",function(){
+        
+        const paragraph = showtoP11.closest('.question').querySelector('.p');
+  
+        // Paragrafın görünürlüğünü değiştiriyoruz
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; // Görünür yap
+        } else {
+          paragraph.style.display = "none"; // Gizle
+        }
+
+          });
+      </script>
+
+  
+    <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Popper.js ve Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

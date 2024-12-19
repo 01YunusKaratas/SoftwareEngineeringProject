@@ -1,0 +1,41 @@
+.navbar{
+    position: static;
+}
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.list-group{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.h4{
+    text-align: center;
+
+}
+
+#book-reservation{
+    text-align: left;
+}

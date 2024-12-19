@@ -1,6 +1,6 @@
 # 📚 Kütüphane Kitap Rezervasyon Sistemi
 
-Bu proje, kullanıcıların kütüphane kitaplarını çevrimiçi olarak görüntülemesini, rezervasyon yapmasını ve yönetmesini sağlayan bir web uygulamasıdır. Kullanıcılar giriş yapabilir, üye olabilir ve mevcut rezervasyonlarını takip edebilir.
+Bu proje, kullanıcıların kütüphane kitaplarını çevrimiçi olarak görüntülemesini ve yönetmesini sağlayan bir web uygulamasıdır. Kullanıcılar giriş yapabilir, üye olabilir ve aldıkları kitaplarla ilgili bilgileri profil sayfasından takip edebilir. Profil sayfasında, kitapların teslim tarihine kaç gün kaldığı bilgisi yer alır. Kullanıcılar doğrudan rezervasyon yapamaz; istedikleri kitapları rezerve etmek için talepler oluşturur ve bu talepler,admin aracığııyla herhangi bir problem yoksa rezervasyon yapılır.
 
 ---
 
@@ -14,7 +14,7 @@ Bu proje, kullanıcıların kütüphane kitaplarını çevrimiçi olarak görün
 | [Kadir Yıldız](#)  | Backend Developer            | [GitHub/Kadir Yıldız](https://github.com/kdryldzz)  |
 | [Muhsin Ay](#)     | Backend Developer            | [GitHub/Muhsin Ay](https://github.com/mhsnayy)  |
 | [Fevzi Güler](#)   | Frontend Developer           | [GitHub/Fevzi Güler](https://github.com/FevziG)   |
-| [Emre Karataş](#)  | Frontend Developer           | [GitHub/Emre Karataş](https://github.com/01YunusKaratas) |
+| [Emre Karataş](#)  | Full Stack Developer         | [GitHub/Emre Karataş](https://github.com/01YunusKaratas) |
 
 
 
@@ -40,9 +40,9 @@ Projeyi geliştirmek için aşağıdaki teknolojiler ve araçlar kullanılmışt
 
 ### Araçlar
 - **Visual Studio**: Proje geliştirme ortamı.
-- **Postman**: API testleri.
 - **Git & GitHub**: Versiyon kontrol ve işbirliği.
 - **Whatsapp/Slack**: Görev yönetimi.
+- **Testing**:Projein kodlarını test etmek için.
 
 ---
 
@@ -52,22 +52,16 @@ Projeyi geliştirmek için aşağıdaki teknolojiler ve araçlar kullanılmışt
   Kullanıcılar hesap oluşturabilir ve giriş yaparak sisteme erişebilir.
   
 - **Kitap Rezervasyonu**:
-  Kullanıcılar kitapları çevrimiçi olarak görüntüleyebilir ve uygun olanları rezerve edebilir.
+  Kullanıcılar kitapları çevrimiçi olarak görüntüleyebilir ve uygun olanları Admin ile iletişim kurarak rezerve edebilir.
 
 - **Kütüphane Yönetimi**:
-  Yönetici panelinden kitap ekleme, silme ve düzenleme yapılabilir.
+  Yönetici panelinden kitap ekleme, silme,güncelleme aynı şekilde kullancıı ekleme ,silme ,güncelleme ,rezervasyon ekleme yapabilir.
+  -Admin Kendisine gelen kullanıcıdan bilgisini alarak ve almak istediği kitap bilgilerini alarak rezervasyon oluşturur.
+  
 
 - **Rezervasyon Takibi**:
-  Kullanıcılar aktif rezervasyonlarını görüntüleyebilir ve yönetebilir.
+  Kullanıcılar aktif rezervasyonlarını Sisteme bilgileri ile girip Profil sayfasından rezerve ettiği kitapın bilgilerini görebilir.
 
 ---
 
-## 📂 Proje Yapısı
 
-```plaintext
-├── /Controllers/       # Backend iş mantığı (Controller dosyaları)
-├── /Models/            # Veritabanı modelleri (Entity Framework)
-├── /Views/             # Razor sayfaları (Dinamik HTML dosyaları)
-├── /wwwroot/           # Statik dosyalar (CSS, JS, img)
-├── appsettings.json    # Veritabanı ve uygulama ayarları
-└── README.md           # Proje açıklaması ve talimatlar

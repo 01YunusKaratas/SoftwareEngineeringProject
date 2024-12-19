@@ -1,0 +1,184 @@
+/* Genel Sayfa */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Profil Başlık */
+#headtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Profil Bilgileri - Sol Sütun */
+.information {
+    padding-top: 40px;
+}
+
+.info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.info strong {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    color: #0056b3;
+}
+
+/* Profil Düzenleme Formları */
+form.method {
+    display: none;
+    margin-top: 15px;
+}
+
+form input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+    .col-sm-5 {
+        margin-bottom: 30px;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .table-responsive {
+        margin-top: 30px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Borrowed Books Section */
+h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table-bordered {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.table-bordered th, .table-bordered td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-bordered th {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.table-bordered tr:hover {
+    background-color: #f1f1f1;
+}
+.table-responsive{
+    margin-top: 60px;
+}
+
+/* Alert (if no borrowed books) */
+.alert-info {
+    background-color: #e9f7fd;
+    border-color: #a9e2f3;
+    color: #007bff;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+#booktitle{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+
+}
+.blink-text{
+    animation: blink 2s infinite;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.alert{
+    text-align: left;
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px 5px 5px  rgba(0, 0, 0, 0.4);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #495057;
+    
+}
+
+
+  

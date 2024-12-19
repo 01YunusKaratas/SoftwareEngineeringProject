@@ -1,0 +1,411 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@model SOFTWAREPROJECT_2024.Models.ViewModels.AdminPanelViewModel
+
+
+@{
+    ViewData["TİTLE"] = "AdminPanel";
+}
+@{
+    Layout = null;
+    
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="stylesheet" href="~/css/AdminPanel.css">
+</head>
+<body>
+    <!--Navbar Section Starting-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand1" asp-controller="Home" asp-action="Index">
+                <img src="/media/logo1.png" alt="LOGO">
+            </a>
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index" id="bookworld">BookWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Aramaa kısmı başlangıç-->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+            </form>
+            <!--Aramaa kısmı bitiş-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Burada ml-auto veya ms-auto kullanabilirsiniz -->
+                    @if(Context.Session.GetString("AdminActive")!=null){
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="AdminGiriş"><i class="fa fa-user-plus"></i>Sign Out</a>
+                    </li>
+                    }
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><i class="fa-solid fa-gear"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropli"><a class="dropdown-item" href="#"><img src="/media/world.png" alt="turkıshFlag" width="10px" height="10px"></a></li>
+                            <li class="dropli"><a class="dropdown-item" href="#"><img src="/media/united-kingdom.png" alt="EnglishFlag" width="10px" height="10px"></a></li>
+                            <li class="dropli"><a class="dropdown-item" href="#"><img src="/media/france.png" alt="frenchFlag" width="10px" height="10px"></a></li>
+                            <li class="dropli"><a class="dropdown-item" href="#"><img src="/media/germany.png" alt="germanyFlag" width="10px" height="10px"></a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <!--Navbar Section Ending-->
+    <!--Kullanıcı İsim Soyisim yeri-->
+     <div>
+    <h1 id="title1">
+
+        Welcome  <strong> <i>@TempData["ADMINNAME"]</i></strong> 
+
+    </h1>
+     </div>
+    <!-- Main Content -->
+    <div class="content-container mt-5">
+         <!--Borrowed POPUP-->
+
+        @if( TempData["HataMesajı"] !=null){
+
+            <div class="alert alert-danger" id="alertid" role="alert">
+
+                @TempData["HataMesajı"];
+            </div>
+            <script>
+                setTimeout(function(){
+
+                    var alertInfo =document.getElementById("alertid");
+
+                    if(alertInfo){
+
+                        alertInfo.style.display="none";
+                    }
+                },2000)
+            </script>
+        }
+
+        @if(TempData["HatalıKitapID"] !=null){
+            <div class="alert alert-danger" role="alert" id="alertkitap">
+                @TempData["HatalıKitapID"];
+            </div>
+            <script>
+               setTimeout(function(){
+
+                    var alertInfo =document.getElementById("alertkitap");
+
+                    if(alertInfo){
+
+                        alertInfo.style.display="none";
+                    }
+                },2000)
+            </script>
+        }
+
+
+
+
+
+
+    <!-- "Yeni Ürün Ekle" Butonu -->
+  <div id="added" class="col-sm-4 col-md-6 col-lg-9 col-xl-12">
+    <p>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addProductModal">
+        Yeni Ürün Ekle
+      </button>
+    </p>
+  </div>
+    <!-- Modal Başlangıcı -->
+    <div class="modal fade col-sm-4 col-md-6 col-lg-9 col-xl-12" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addProductModalLabel">Yeni Ürün Ekle</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Ürün Ekleme Formu -->
+            <form method="post" asp-controller="Home" asp-action="Added">
+            <div class="form-group mb-3">
+                <label for="MemberID" class="form-label">MemberID</label>
+                <input type="number" class="form-control" name="MemberID" id="MemberID" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="BookID" class="form-label">BookID</label>
+                <input type="number" class="form-control" name="BookID" id="BookID" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="BorrowDate" class="form-label">BorrowDate</label>
+                <input type="date" class="form-control" name="BorrowDate" id="BorrowDate" required>
+            </div>
+             <div class="form-group mb-3">
+                <label for="ReturnDate" class="form-label">ReturnDate</label>
+                <input type="date" class="form-control" name="ReturnDate" id="ReturnDate">
+            </div>
+            <div class="form-group mb-3">
+                <label for="Status" class="form-label">Status</label>
+                <input type="text" class="form-control" name="Status" id="Status" required>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Ekle</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">İptal</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+  <!-- "Burası Ürün Ekleme Form bitişi" -->
+
+        <h3>Borrowed Book</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>BorrowId</th>
+                    <th>MemberId</th>
+                    <th>MemberName</th>
+                    <th>BookId</th>
+                    <th>BookName</th>
+                    <th>BorrowDate</th>
+                    <th>ReturnDate</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+                 <!--Buraya elle girilmicek otomatik gelcek kitap bilgiler input offline yüzden düzen çekildi-->
+            <tbody>
+                @{
+
+                    foreach(var item in Model.BorrowingsViewModel){
+                        <tr>
+                            <td>@item.BorrowId</td>
+                            <td>@item.MemberId</td>
+                            <td>@item.Name</td>
+                            <td>@item.BookId</td>
+                            <td>@item.BookName</td>
+                            <td>@item.BorrowDate</td>
+                            <td>@item.ReturnDate</td>
+                            <td>@item.Status</td>
+                            <td> 
+                                <form asp-controller="Home" asp-action="Delete">
+                                    <input type="hidden" name="BorrowId"  value="@item.BorrowId">
+                                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+                                </form>
+                                <button class="btn btn-warning">Güncelle</button>
+                            </td>
+                        </tr>
+                    }
+                }
+
+
+            </tbody>
+
+
+
+        </table>
+       
+    </div>
+    
+    <!--Burasıda kişileri gösterme yeri-->
+
+    <div class="container">
+            <div id="added" class="col-sm-4 col-md-6 col-lg-9 col-xl-12">
+    <p>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMemberModal">
+        Yeni Kullanıcı Ekle
+      </button>
+    </p>
+  </div>
+    <!-- Modal Başlangıcı -->
+    <div class="modal fade col-sm-4 col-md-6 col-lg-9 col-xl-12" id="addMemberModal" tabindex="-1" aria-labelledby="addMemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addMemberModalLabel">Kullanıcı Bilgileri</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Kullancıı Ekleme Formu -->
+            <form method="post" asp-controller="Home" asp-action="AddedMember">
+            <div class="form-group mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="Name" id="Name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="Email" id="Email" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="Phone" class="form-label">Phone</label>
+                <input type="text"  class="form-control" name="Phone" id="Phone">
+            </div>
+            <div class="form-group mb-3">
+                <label for="JoinDate" class="form-label">JoinDate</label>
+                <input type="date" class="form-control" name="JoinDate" id="JoinDate">
+            </div>
+            <div class="form-group mb-3">
+                <label for="MemberPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" name="MemberPassword" id="MemberPassword" required>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Ekle</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">İptal</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+        <table>
+            <h3>Members</h3>
+            <thead>
+                <th>MemberID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>JoinDate</th>
+                <th>MemberPassword</th>
+            </thead>
+            <tbody>
+                @{
+
+                    foreach(var item in Model.Members){
+                        <tr>
+                            <td>@item.MemberId</td>
+                            <td>@item.Name</td>
+                            <td>@item.Email</td>
+                            <td>@item.Phone</td>
+                            <td>@item.JoinDate</td>
+                            <td>@item.MemberPassword</td>
+                            <td>
+                                
+                                <form asp-controller="Home" asp-action="DeleteMember">
+                                    <input type="hidden" name="MemberId" value="@item.MemberId"> 
+                                    <button type="submit" class="btn btn-danger">Sil</button>
+                                </form>
+                                <button class="btn btn-warning">Güncelle</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+<!--Member bitiş yeri-->
+
+
+
+
+
+
+    < <div id="added" class="col-sm-4 col-md-6 col-lg-9 col-xl-12">
+    <p>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addBookModal">
+        Yeni Kitap EKle
+      </button>
+    </p>
+  </div>
+    <!-- Modal Başlangıcı -->
+    <div class="modal fade col-sm-4 col-md-6 col-lg-9 col-xl-12" id="addBookModal" tabindex="-1" aria-labelledby="addBookModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="addBookModalLabel">Yeni Ürün Ekle</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Ürün Ekleme Formu -->
+            <form method="post" asp-controller="Home" asp-action="AddedBook">
+            <div class="form-group mb-3">
+                <label for="BookName" class="form-label">BookName</label>
+                <input type="text" class="form-control" name="BookName" id="BookName" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="Author" class="form-label">Author</label>
+                <input type="text" class="form-control" name="Author" id="Author" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="Genre" class="form-label">Genre</label>
+                <input type="text" class="form-control" name="Genre" id="Genre" required>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-success">Ekle</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">İptal</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+        <table>
+            <h3>Books</h3>
+            <thead>
+                <th>BookID</th>
+                <th>BookName</th>
+                <th>Author</th>
+                <th>Genre</th>
+               
+            </thead>
+            <tbody>
+                @{
+
+                    foreach(var item in Model.Books){
+                        <tr>
+                            <td>@item.BookId</td>
+                            <td>@item.BookName</td>
+                            <td>@item.Author</td>
+                            <td>@item.Genre</td>
+                            <td>
+                                <form asp-controller="Home" asp-action="">
+                                    <input type="hidden" name="BookId"  value="@item.BookId">
+                                    <button type="submit" class="btn-close" data-bs-dismiss="modal">Sil</button>
+                                </form>
+                                <form asp-controller="Home" asp-action="">
+                                    <button class="btn btn-warning">Güncelle</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Popper.js ve Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

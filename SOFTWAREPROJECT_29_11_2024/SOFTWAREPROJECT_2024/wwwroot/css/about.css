@@ -1,0 +1,66 @@
+.container{
+  
+    color: #212529;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.row{
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+}
+.aboutp{
+    line-height: 2rem;
+    text-indent: 2rem;
+    font-size: 18px;
+    text-align: left;
+}
+
+#historyphoto{
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Geçiş efekti */
+}
+#historyphoto:hover{
+    transform: scale(1.04); /*%4 büyür*/
+    opacity: 0.8; /* Opaklık değişimi */
+
+}
+.nav-cont{
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.col-sm-2 a{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.col-sm-2 a:hover{
+
+    background-color: #E3F2FD;
+    color:#000000;
+    border: 1px solid #90CAF9;
+    text-decoration: underline;
+    
+}
+
+.footer{
+    margin: 0px;
+    color: #FFFFFF;
+    margin: auto;
+    
+}
+.row{
+    margin: 0px;
+    padding: 0px;
+}
