@@ -1,0 +1,120 @@
+wwwroot\css\about.css
+wwwroot\css\AdminGiriş.css
+wwwroot\css\AdminPanel.css
+wwwroot\css\FAQ.css
+wwwroot\css\index.css
+wwwroot\css\Profile.css
+wwwroot\css\reservation.css
+wwwroot\css\singın.css
+wwwroot\css\singup.css
+wwwroot\css\site.css
+wwwroot\css\smsverification.css
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\media\1984.jpg
+wwwroot\media\A Tale of Two Cities.jpg
+wwwroot\media\Adsız tasarım.png
+wwwroot\media\Animal Farm.jpg
+wwwroot\media\book_operations (1).png
+wwwroot\media\bookworld.png
+wwwroot\media\Brave New World.jpg
+wwwroot\media\Catch-22.jpg
+wwwroot\media\Crime and Punishment.jpg
+wwwroot\media\Don Quixote.jpg
+wwwroot\media\Dorian Gray.jpg
+wwwroot\media\Dracula.jpg
+wwwroot\media\Fahrenheit 451.jpg
+wwwroot\media\france.png
+wwwroot\media\Frankenstein.jpg
+wwwroot\media\germany.png
+wwwroot\media\image-1.jpeg
+wwwroot\media\image-2.jpeg
+wwwroot\media\Jane Eyre.jpg
+wwwroot\media\kitaplogo.png
+wwwroot\media\Les Misérables.jpg
+wwwroot\media\logo1.png
+wwwroot\media\member_operations (1).png
+wwwroot\media\Moby-Dick.jpg
+wwwroot\media\One Hundred Years of Solitude.jpg
+wwwroot\media\pexels-photo-2553425.webp
+wwwroot\media\photo4.webp
+wwwroot\media\Pride and Prejudice.jpg
+wwwroot\media\profil.png
+wwwroot\media\reservation operations.png
+wwwroot\media\Slaughterhouse-Five.jpg
+wwwroot\media\SWE (1).png
+wwwroot\media\tarihçe.png
+wwwroot\media\The Alchemist.jpg
+wwwroot\media\The Brothers Karamazov.jpg
+wwwroot\media\The Catcher in the Rye.jpg
+wwwroot\media\The Divine Comedy.jpg
+wwwroot\media\The Grapes of Wrath.jpg
+wwwroot\media\The Great Gatsby.jpg
+wwwroot\media\The Hobbit.jpg
+wwwroot\media\The Kite Runner.jpg
+wwwroot\media\The Lord of the Rings.jpg
+wwwroot\media\The Odyssey.jpg
+wwwroot\media\The Road.jpg
+wwwroot\media\The Shining.jpg
+wwwroot\media\The Stranger.jpg
+wwwroot\media\To Kill a Mockingbird.jpg
+wwwroot\media\united-kingdom.png
+wwwroot\media\world.png
+wwwroot\media\Wuthering Heights.jpg

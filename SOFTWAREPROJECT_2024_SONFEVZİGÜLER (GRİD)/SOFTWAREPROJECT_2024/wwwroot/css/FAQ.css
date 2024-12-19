@@ -1,0 +1,68 @@
+/* Genel Stil (Tüm Ekranlar Ýçin) */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Küçük Ekranlar (Mobil Cihazlar) */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column; /* Dikey hizalama */
+    }
+}
+
+/* Orta Ekranlar (Tablet Cihazlar) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+/* Büyük Ekranlar (Laptop ve Masaüstü) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}
+
+/* Çok Büyük Ekranlar (Büyük Masaüstü Ekranlar) */
+@media screen and (min-width: 1201px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+}
