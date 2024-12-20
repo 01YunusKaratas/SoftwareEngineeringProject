@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["TİTLE"] = "SignUp.Page";
+}
+@{Layout =null;}
+@model SOFTWAREPROJECT_2024.Models.Member
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="YUNUS EMRE KARATAŞ">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="~/css/index.css">
+    <link rel="stylesheet" href="~/css/singup.css">
+    
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--Animation for css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__bounce" asp-controller="Home" asp-action="Index">
+                <img src="~/media/Adsız tasarım.png" alt="LOGO" width="150px" height="100px">
+            </a>
+            <a class="navbar-brand" id="bookworld" asp-controller="Home" asp-action="Index">BookWorld</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span><i class="fa-solid fa-gear"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><img src="~/media/world.png" alt="turkishFlag" width="10px" height="10px"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="~/media/united-kingdom.png" alt="englishFlag" width="10px" height="10px"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="~/media/france.png" alt="frenchFlag" width="10px" height="10px"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="~/media/germany.png" alt="germanyFlag" width="10px" height="10px"></a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"asp-controller="Home"  asp-action="FAQ"><i class="fas fa-question-circle"></i></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sign Up Form Section Starting -->
+    <div class="container" id="signup">
+        <h2 id="title1">Create Your BookWorld Account</h2>
+        <p id="p1">Welcome to BookWorld! To get started, please fill in the form below to create your account. Once you've registered, you can log in to access our library services.</p>
+            @if (ViewBag.message != null)
+            {
+                <div class="alert alert-danger animate__animated animate__tada" role="alert" id="dangeralert">
+                    @ViewBag.message
+                </div>
+                
+                <script>
+                    setTimeout(function(){
+                        var info =document.getElementById("dangeralert");
+                        if(info){
+                            info.style.display="none";
+                        }
+                    },3000);
+                </script>
+            }
+        <form method="post" asp-controller="Home" asp-action="Registered">
+            @Html.AntiForgeryToken()
+            <div class="container form-container animate__animated animate__backInUp">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="Name">Name:</label>
+                        <input type="text" name="Name" id="Name" placeholder="Please enter your full name." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="Email">Email Address:</label>
+                        <input type="email" name="Email" id="Email" placeholder="Please enter your email address." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="MemberPassword">Password:</label>
+                        <input type="password" name="MemberPassword" id="MemberPassword" placeholder="Please enter your password." required>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="Phone">Phone:</label>
+                        <input type="tel" name="Phone" id="Phone" pattern="[0-9]{11}" placeholder="Enter 11-digit phone number" required>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn btn-primary" id="signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <ol id="unorder">
+            <li>To sign up, provide your name, email address, and a password of your choice.</li>
+            <li>If you already have a BookWorld account, you can log in here: <a asp-controller="Home" asp-action="SignIn">Login</a></li>
+            <li>If you have forgotten your password, click here to reset it: <a href="#resetPassword">Reset Password</a></li>
+        </ol>
+    </div>
+    <!-- Sign Up Form Section Ending -->
+
+    <!-- Footer Starting -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ending -->
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Popper.js ve Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--Bunu sayfa geçişleri için koydum-->
+
+  </body>
+</html>
