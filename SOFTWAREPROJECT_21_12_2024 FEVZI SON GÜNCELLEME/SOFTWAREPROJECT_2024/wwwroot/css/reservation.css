@@ -1,0 +1,233 @@
+.navbar{
+    position: static;
+}
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.list-group{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+   
+}
+footer .col-sm-6{
+    margin: auto;
+    text-align: center;
+    
+}
+.h4{
+    text-align: left; 
+    margin-left: 3rem;
+    
+
+}
+
+#book-reservation{
+    text-align: left;
+}
+
+#subinformation{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+.modal-content{
+    background-color: #ffffff !important;
+}
+.modal-backdrop{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.modal-content{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+#bookimages {
+    transition: transform 0.5s ease;
+}
+#bookimages:hover{
+
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+#bookimages2{
+    transition: transform 0.8s ease; /* Yumuşak dönüşüm animasyonu */
+    transform-style: preserve-3d; /* 3D dönüşüm etkisini korur */
+   
+}
+#bookimages2:hover{
+
+    transform: rotateY(180deg);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+/*Alertler için yazdım*/
+#alertbook{
+    margin-top: 15rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.card{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.genre{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 3px;
+}
+.genre:hover{
+    color: #0056B3;
+    
+}
+
+
+@media (max-width: 576px) {
+    .col-md-3, .col-md-9 {
+        flex: 1 1 100%;
+        width: 100%;
+        
+    }
+
+    .list-group {
+        width: 100%;
+/*        margin-bottom: 1rem;*/
+        margin-right:25%;
+    }
+
+    .list-group-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #bookimages {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Küçük ekranlar (max-width: 768px) */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .list-group {
+        width: 100%;
+    }
+
+    .col-md-9 {
+        flex: 1 1 100%;
+    }
+    .list-group {
+        margin-left: 18%;
+    }
+    .list-group-item {
+        font-size: 10   px;
+        padding: 10px;
+    }
+
+    #books-list .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Orta büyüklükteki ekranlar (max-width: 992px) */
+@media (max-width: 991px) {
+    /* Kategori genişliğini %100 yapıyoruz */
+    .col-md-3, .col-sm-3 {
+        flex: 1 1 100%;
+        width: 100%; /* Kategori genişliği %100 */
+        margin-bottom: 1rem; /* Altında boşluk bırakalım */
+        padding-right: 0;
+        
+    }
+
+    /* Kitapları kategori altına yerleştiriyoruz */
+    .col-md-9 {
+        flex: 1 1 100%; /* Kitaplar da kategori altında %100 genişlikte olacak */
+        width: 100%;
+        margin-top: 1rem; /* Kitaplar kategorinin altına yerleşsin */
+    }
+
+    .list-group {
+        margin-left:25%;
+    }
+
+    .h4 {
+        margin-left: 40%;
+    }
+
+    .list-group-item {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #books-list .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Büyük ekranlar (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .col-md-3 {
+        flex: 1 1 33.33%;
+    }
+
+    .col-md-9 {
+        flex: 1 1 66.66%;
+    }
+
+    .list-group {
+        width: 250px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+/* X-Large ekranlar (max-width: 1600px) */
+@media (max-width: 1600px) {
+    .col-md-3 {
+        flex: 1 1 25%;
+    }
+
+    .col-md-9 {
+        flex: 1 1 75%;
+    }
+
+    .list-group {
+        width: 300px;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+
