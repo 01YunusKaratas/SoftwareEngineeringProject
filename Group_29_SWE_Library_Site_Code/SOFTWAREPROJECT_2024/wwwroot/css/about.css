@@ -1,0 +1,227 @@
+body {
+    width: 100%;
+    height: auto;
+}
+.container {
+    color: #212529;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%; /* Tam genişlik */
+    padding: 10px; /* İçerik için boşluk */
+    margin: auto;
+}
+
+.row {
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap; /* Küçük ekranlarda alt alta dizilmesini sağlar */
+    justify-content: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    text-align: center; /* Başlıkları ortala */
+}
+
+.aboutp {
+    line-height: 1.8rem;
+    text-indent: 1.5rem;
+    font-size: 16px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+#historyphoto {
+    border-radius: 5px;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    max-width: 100%; /* Küçük ekranlarda taşmayı önler */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Ortalar */
+}
+
+    #historyphoto:hover {
+        transform: scale(1.07);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    }
+
+.bookworldfoto {
+    max-width: 100%; /* Tam genişlik */
+    height: auto;
+}
+
+.nav-cont {
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+}
+
+.col-sm-2 a {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px; /* Butonlar arası boşluk */
+}
+
+    .col-sm-2 a:hover {
+        background-color: #E3F2FD;
+        color: #000000;
+        border: 1px solid #90CAF9;
+        text-decoration: underline;
+    }
+
+.footer {
+    margin: 0px;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    background-color: #212529;
+}
+
+@media (max-width: 992px) {
+    .navbar-brand img {
+        width: 120px;
+        height: 80px;
+    }
+
+    .bookworldfoto img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalar */
+        width: 100%;
+    }
+
+    .aboutp {
+        font-size: 15px;
+    }
+
+    .col a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    .col-sm-2 {
+        margin:auto;
+    }
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aboutp {
+        font-size: 14px;
+    }
+
+    #historyphoto {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .aboutp {
+        font-size: 13px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .col a {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+
+
+
+/*.container{
+  
+    color: #212529;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.row{
+    margin-top:10px;
+    margin-bottom: 5px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+}
+.aboutp{
+    line-height: 2rem;
+    text-indent: 2rem;
+    font-size: 18px;
+    text-align: left;
+}
+
+#historyphoto{
+    border-radius: 5px;
+    transition: transform 0.4s ease, opacity 0.3s ease;*/ /* Geçiş efekti */
+/*}
+#historyphoto:hover{
+    transform: scale(1.07);*/ /*%4 büyür*/
+    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+
+
+}
+.nav-cont{
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.col-sm-2 a{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.col-sm-2 a:hover{
+
+    background-color: #E3F2FD;
+    color:#000000;
+    border: 1px solid #90CAF9;
+    text-decoration: underline;
+    
+}
+
+.footer{
+    margin: 0px;
+    color: #FFFFFF;
+    margin: auto;
+    
+}
+.row{
+    margin: 0px;
+    padding: 0px;
+}*/

@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\fevzi g\u00FCler\\desktop\\softwareproject_21_12_2024 fevz\u0130 son g\u00FCncelleme\\softwareproject_21_12_2024\\softwareproject_2024\\wwwroot\\css\\singup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\wwwroot\\css\\singup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\fevzi g\u00FCler\\desktop\\softwareproject_21_12_2024 fevz\u0130 son g\u00FCncelleme\\softwareproject_21_12_2024\\softwareproject_2024\\wwwroot\\css\\sing\u0131n.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\wwwroot\\css\\sing\u0131n.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\fevzi g\u00FCler\\desktop\\softwareproject_21_12_2024 fevz\u0130 son g\u00FCncelleme\\softwareproject_21_12_2024\\softwareproject_2024\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|c:\\users\\fevzi g\u00FCler\\desktop\\softwareproject_21_12_2024 fevz\u0130 son g\u00FCncelleme\\softwareproject_21_12_2024\\softwareproject_2024\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D7BEC387-EADC-4640-BB9E-911EC986EC77}|SOFTWAREPROJECT_2024\\SOFTWAREPROJECT_2024.csproj|solutionrelative:softwareproject_2024\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.css",
+              "DocumentMoniker": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\Profile.css",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\wwwroot\\css\\Profile.css",
+              "ToolTip": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\Profile.css",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\wwwroot\\css\\Profile.css",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-21T10:59:09.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "singup.css",
+              "DocumentMoniker": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\singup.css",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\wwwroot\\css\\singup.css",
+              "ToolTip": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\singup.css",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\wwwroot\\css\\singup.css",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-21T11:08:38.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\Views\\Home\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\Views\\Home\\SignIn.cshtml",
+              "ToolTip": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\Views\\Home\\SignIn.cshtml",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\Views\\Home\\SignIn.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T11:08:07.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sing\u0131n.css",
+              "DocumentMoniker": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\sing\u0131n.css",
+              "RelativeDocumentMoniker": "SOFTWAREPROJECT_2024\\wwwroot\\css\\sing\u0131n.css",
+              "ToolTip": "C:\\Users\\Fevzi G\u00FCler\\Desktop\\SOFTWAREPROJECT_21_12_2024 FEVZ\u0130 SON G\u00DCNCELLEME\\SOFTWAREPROJECT_21_12_2024\\SOFTWAREPROJECT_2024\\wwwroot\\css\\sing\u0131n.css",
+              "RelativeToolTip": "SOFTWAREPROJECT_2024\\wwwroot\\css\\sing\u0131n.css",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-21T11:07:05.863Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
